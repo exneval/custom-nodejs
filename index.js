@@ -3,6 +3,8 @@ const express = require('express')
 const app = express()
 const port = 3000
 
+app.use(express.json());
+
 const client = new microgenV3.MicrogenClient({
   apiKey: process.env.API_KEY
 })
