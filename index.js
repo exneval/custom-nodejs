@@ -97,8 +97,9 @@ app.delete("/products/:id", async (req, res) => {
   res.status(response.status).send(response.data)
 })
 
-app.get('/compute', async (req, res) => {
+app.post('/compute', async (req, res) => {
   const data = [{foo: "bar"}, {foo: "bar2"}]
+  console.log(req.body)
   res.status(200).send(data)
 })
 
