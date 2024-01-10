@@ -97,6 +97,11 @@ app.delete("/products/:id", async (req, res) => {
   res.status(response.status).send(response.data)
 })
 
+app.get('/compute', async (req, res) => {
+  const data = [{foo: "bar"}, {foo: "bar2"}]
+  res.status(200).send(data)
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
