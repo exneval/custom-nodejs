@@ -100,7 +100,7 @@ app.delete("/products/:id", async (req, res) => {
 })
 
 app.post('/compute', async (req, res) => {
-  const data = [{foo: "bar"}, {foo: "bar2"}]
+  const data = [{foo: "bar"}, {foo: "bar2"}, {foo: "bar3}]
   console.log(req.body)
   res.status(200).send(data)
 })
